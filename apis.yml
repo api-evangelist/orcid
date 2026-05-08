@@ -37,6 +37,8 @@ apis:
         url: https://info.orcid.org/documentation/features/public-api/#easy-faq-2472
       - type: Getting Started
         url: https://info.orcid.org/documentation/api-tutorials/api-tutorial-read-data-on-a-record/
+      - url: openapi/orcid-openapi.yml
+        type: OpenAPI
   - aid: orcid:orcid-member-api
     name: ORCID Member API
     description: >-
