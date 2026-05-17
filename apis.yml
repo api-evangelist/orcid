@@ -35,7 +35,7 @@ apis:
         url: https://info.orcid.org/documentation/features/public-api/
       - type: Authentication
         url: https://info.orcid.org/documentation/features/public-api/#easy-faq-2472
-      - type: Getting Started
+      - type: GettingStarted
         url: https://info.orcid.org/documentation/api-tutorials/api-tutorial-read-data-on-a-record/
       - url: openapi/orcid-openapi.yml
         type: OpenAPI
@@ -60,21 +60,21 @@ common:
     url: https://orcid.org/
   - type: Documentation
     url: https://info.orcid.org/documentation/
-  - type: Getting Started
+  - type: GettingStarted
     url: https://info.orcid.org/documentation/api-tutorials/
   - type: Authentication
     url: https://info.orcid.org/documentation/api-tutorials/api-tutorial-get-and-authenticated-orcid-id/
-  - type: Sign Up
+  - type: SignUp
     url: https://orcid.org/register
   - type: Login
     url: https://orcid.org/signin
-  - type: Terms of Service
+  - type: TermsOfService
     url: https://info.orcid.org/terms-and-conditions-of-use/
-  - type: Privacy Policy
+  - type: PrivacyPolicy
     url: https://info.orcid.org/privacy-policy/
   - type: Support
     url: https://support.orcid.org/
-  - type: GitHub Organization
+  - type: GitHubOrganization
     url: https://github.com/ORCID
   - type: Website
     url: https://orcid.org/
