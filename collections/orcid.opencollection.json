@@ -1,0 +1,320 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "ORCID Public API",
+    "version": "3.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Get full ORCID record summary",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://pub.orcid.org/v3.0/:orcid_id/record",
+        "params": [
+          {
+            "name": "orcid_id",
+            "value": "",
+            "type": "path",
+            "description": "ORCID iD (e.g. 0000-0001-2345-6789)"
+          }
+        ]
+      },
+      "docs": "Get full ORCID record summary"
+    },
+    {
+      "info": {
+        "name": "Get the biographical (person) section of a record",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://pub.orcid.org/v3.0/:orcid_id/person",
+        "params": [
+          {
+            "name": "orcid_id",
+            "value": "",
+            "type": "path",
+            "description": "ORCID iD (e.g. 0000-0001-2345-6789)"
+          }
+        ]
+      },
+      "docs": "Get the biographical (person) section of a record"
+    },
+    {
+      "info": {
+        "name": "Get a summary of validated and self-asserted record items",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://pub.orcid.org/v3.0/:orcid_id/summary",
+        "params": [
+          {
+            "name": "orcid_id",
+            "value": "",
+            "type": "path",
+            "description": "ORCID iD (e.g. 0000-0001-2345-6789)"
+          }
+        ]
+      },
+      "docs": "Get a summary of validated and self-asserted record items"
+    },
+    {
+      "info": {
+        "name": "Get countries/regions associated with the record",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://pub.orcid.org/v3.0/:orcid_id/address",
+        "params": [
+          {
+            "name": "orcid_id",
+            "value": "",
+            "type": "path",
+            "description": "ORCID iD (e.g. 0000-0001-2345-6789)"
+          }
+        ]
+      },
+      "docs": "Get countries/regions associated with the record"
+    },
+    {
+      "info": {
+        "name": "Get email addresses on the record",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://pub.orcid.org/v3.0/:orcid_id/email",
+        "params": [
+          {
+            "name": "orcid_id",
+            "value": "",
+            "type": "path",
+            "description": "ORCID iD (e.g. 0000-0001-2345-6789)"
+          }
+        ]
+      },
+      "docs": "Get email addresses on the record"
+    },
+    {
+      "info": {
+        "name": "Get linked external identifiers",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://pub.orcid.org/v3.0/:orcid_id/external-identifiers",
+        "params": [
+          {
+            "name": "orcid_id",
+            "value": "",
+            "type": "path",
+            "description": "ORCID iD (e.g. 0000-0001-2345-6789)"
+          }
+        ]
+      },
+      "docs": "Get linked external identifiers"
+    },
+    {
+      "info": {
+        "name": "Get keywords associated with the record",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://pub.orcid.org/v3.0/:orcid_id/keywords",
+        "params": [
+          {
+            "name": "orcid_id",
+            "value": "",
+            "type": "path",
+            "description": "ORCID iD (e.g. 0000-0001-2345-6789)"
+          }
+        ]
+      },
+      "docs": "Get keywords associated with the record"
+    },
+    {
+      "info": {
+        "name": "Get alternative names on the record",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://pub.orcid.org/v3.0/:orcid_id/other-names",
+        "params": [
+          {
+            "name": "orcid_id",
+            "value": "",
+            "type": "path",
+            "description": "ORCID iD (e.g. 0000-0001-2345-6789)"
+          }
+        ]
+      },
+      "docs": "Get alternative names on the record"
+    },
+    {
+      "info": {
+        "name": "Get name and biography",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://pub.orcid.org/v3.0/:orcid_id/personal-details",
+        "params": [
+          {
+            "name": "orcid_id",
+            "value": "",
+            "type": "path",
+            "description": "ORCID iD (e.g. 0000-0001-2345-6789)"
+          }
+        ]
+      },
+      "docs": "Get name and biography"
+    },
+    {
+      "info": {
+        "name": "Get researcher profile links",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://pub.orcid.org/v3.0/:orcid_id/researcher-urls",
+        "params": [
+          {
+            "name": "orcid_id",
+            "value": "",
+            "type": "path",
+            "description": "ORCID iD (e.g. 0000-0001-2345-6789)"
+          }
+        ]
+      },
+      "docs": "Get researcher profile links"
+    },
+    {
+      "info": {
+        "name": "Get education affiliations",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://pub.orcid.org/v3.0/:orcid_id/educations",
+        "params": [
+          {
+            "name": "orcid_id",
+            "value": "",
+            "type": "path",
+            "description": "ORCID iD (e.g. 0000-0001-2345-6789)"
+          }
+        ]
+      },
+      "docs": "Get education affiliations"
+    },
+    {
+      "info": {
+        "name": "Get employment affiliations",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://pub.orcid.org/v3.0/:orcid_id/employments",
+        "params": [
+          {
+            "name": "orcid_id",
+            "value": "",
+            "type": "path",
+            "description": "ORCID iD (e.g. 0000-0001-2345-6789)"
+          }
+        ]
+      },
+      "docs": "Get employment affiliations"
+    },
+    {
+      "info": {
+        "name": "Get funding activities",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://pub.orcid.org/v3.0/:orcid_id/fundings",
+        "params": [
+          {
+            "name": "orcid_id",
+            "value": "",
+            "type": "path",
+            "description": "ORCID iD (e.g. 0000-0001-2345-6789)"
+          }
+        ]
+      },
+      "docs": "Get funding activities"
+    },
+    {
+      "info": {
+        "name": "Get peer review activities",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://pub.orcid.org/v3.0/:orcid_id/peer-reviews",
+        "params": [
+          {
+            "name": "orcid_id",
+            "value": "",
+            "type": "path",
+            "description": "ORCID iD (e.g. 0000-0001-2345-6789)"
+          }
+        ]
+      },
+      "docs": "Get peer review activities"
+    },
+    {
+      "info": {
+        "name": "Get research works",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://pub.orcid.org/v3.0/:orcid_id/works",
+        "params": [
+          {
+            "name": "orcid_id",
+            "value": "",
+            "type": "path",
+            "description": "ORCID iD (e.g. 0000-0001-2345-6789)"
+          }
+        ]
+      },
+      "docs": "Get research works"
+    },
+    {
+      "info": {
+        "name": "Get specific works in bulk by put-codes",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://pub.orcid.org/v3.0/:orcid_id/works/:put_codes",
+        "params": [
+          {
+            "name": "orcid_id",
+            "value": "",
+            "type": "path",
+            "description": "ORCID iD (e.g. 0000-0001-2345-6789)"
+          },
+          {
+            "name": "put_codes",
+            "value": "",
+            "type": "path",
+            "description": "Comma-separated list of put-codes (up to 100)"
+          }
+        ]
+      },
+      "docs": "Get specific works in bulk by put-codes"
+    }
+  ],
+  "bundled": true
+}
