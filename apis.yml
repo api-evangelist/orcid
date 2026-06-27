@@ -64,7 +64,7 @@ common:
     url: https://info.orcid.org/documentation/api-tutorials/
   - type: Authentication
     url: https://info.orcid.org/documentation/api-tutorials/api-tutorial-get-and-authenticated-orcid-id/
-  - type: SignUp
+  - type: Signup
     url: https://orcid.org/register
   - type: Login
     url: https://orcid.org/signin
