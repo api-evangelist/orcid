@@ -1,0 +1,45 @@
+openapi: 3.1.0
+info:
+  title: ORCID Public Address API
+  description: The ORCID Public API allows reading publicly available data from ORCID records. Based on version 3.0 of the ORCID message schema.
+  version: '3.0'
+servers:
+- url: https://pub.orcid.org/v3.0
+  description: ORCID Public API v3.0
+tags:
+- name: Address
+paths:
+  /{orcid_id}/address:
+    parameters:
+    - $ref: '#/components/parameters/OrcidId'
+    get:
+      summary: Get countries/regions associated with the record
+      operationId: getAddress
+      responses:
+        '200':
+          $ref: '#/components/responses/Generic'
+      tags:
+      - Address
+components:
+  parameters:
+    OrcidId:
+      name: orcid_id
+      in: path
+      required: true
+      description: ORCID iD (e.g. 0000-0001-2345-6789)
+      schema:
+        type: string
+  responses:
+    Generic:
+      description: Successful response
+      content:
+        application/json:
+          schema:
+            type: object
+            additionalProperties: true
+        application/xml:
+          schema:
+            type: object
+            additionalProperties: true
+x-generated-from: https://info.orcid.org/api/tutorial/read-orcid-records
+x-generated-by: claude-crawl-2026-05-08
