@@ -5,9 +5,21 @@ description: >-
   every other researcher. ORCID provides a public API for reading data from ORCID records and a member API for creating
   and updating records.
 type: Index
+accessModel:
+  pricing: freemium
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Freemium
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
 position: Consumer
 access: 3rd-Party
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/orcid.png
 tags:
   - Academic
   - Identity
@@ -17,42 +29,263 @@ modified: '2026-05-19'
 url: https://raw.githubusercontent.com/api-evangelist/orcid/refs/heads/main/apis.yml
 specificationVersion: '0.19'
 apis:
-  - aid: orcid:orcid-public-api
-    name: ORCID Public API
-    description: >-
-      The ORCID Public API allows reading publicly available data from ORCID records. Based on version 3.0 of the ORCID
-      message schema.
-    humanURL: https://info.orcid.org/documentation/features/public-api/
-    baseURL: https://pub.orcid.org/v3.0
-    tags:
-      - Identity
-      - Public
-      - Researchers
-    properties:
-      - type: Documentation
-        url: https://info.orcid.org/documentation/features/public-api/
-      - type: Authentication
-        url: https://info.orcid.org/documentation/features/public-api/#easy-faq-2472
-      - type: GettingStarted
-        url: https://info.orcid.org/documentation/api-tutorials/api-tutorial-read-data-on-a-record/
-      - url: openapi/orcid-openapi.yml
-        type: OpenAPI
-  - aid: orcid:orcid-member-api
-    name: ORCID Member API
-    description: >-
-      The ORCID Member API allows member organizations to read, write, and update data on ORCID records with user
-      permission.
-    humanURL: https://info.orcid.org/documentation/features/member-api/
-    baseURL: https://api.orcid.org/v3.0
-    tags:
-      - Identity
-      - Member
-      - Researchers
-    properties:
-      - type: Documentation
-        url: https://info.orcid.org/documentation/features/member-api/
-      - type: Authentication
-        url: https://info.orcid.org/documentation/api-tutorials/api-tutorial-get-and-authenticated-orcid-id/
+- aid: orcid:orcid-member-api
+  name: ORCID Member API
+  description: >-
+    The ORCID Member API allows member organizations to read, write, and update data on ORCID records
+    with user permission.
+  humanURL: https://info.orcid.org/documentation/features/member-api/
+  baseURL: https://api.orcid.org/v3.0
+  tags:
+  - Identity
+  - Member
+  - Researchers
+  properties:
+  - type: Documentation
+    url: https://info.orcid.org/documentation/features/member-api/
+  - type: Authentication
+    url: >-
+      https://info.orcid.org/documentation/api-tutorials/api-tutorial-get-and-authenticated-orcid-id/
+- aid: orcid:orcid-address-api
+  name: ORCID Address API
+  description: The Address API from ORCID — 1 operation(s) for address.
+  humanURL: https://info.orcid.org/documentation/features/public-api/
+  baseURL: https://pub.orcid.org/v3.0
+  tags:
+  - Address
+  properties:
+  - type: OpenAPI
+    url: openapi/orcid-address-api-openapi.yml
+  - type: Documentation
+    url: https://info.orcid.org/documentation/features/public-api/
+  - type: Authentication
+    url: https://info.orcid.org/documentation/features/public-api/#easy-faq-2472
+  - type: GettingStarted
+    url: https://info.orcid.org/documentation/api-tutorials/api-tutorial-read-data-on-a-record/
+- aid: orcid:orcid-educations-api
+  name: ORCID Educations API
+  description: The Educations API from ORCID — 1 operation(s) for educations.
+  humanURL: https://info.orcid.org/documentation/features/public-api/
+  baseURL: https://pub.orcid.org/v3.0
+  tags:
+  - Educations
+  properties:
+  - type: OpenAPI
+    url: openapi/orcid-educations-api-openapi.yml
+  - type: Documentation
+    url: https://info.orcid.org/documentation/features/public-api/
+  - type: Authentication
+    url: https://info.orcid.org/documentation/features/public-api/#easy-faq-2472
+  - type: GettingStarted
+    url: https://info.orcid.org/documentation/api-tutorials/api-tutorial-read-data-on-a-record/
+- aid: orcid:orcid-email-api
+  name: ORCID Email API
+  description: The Email API from ORCID — 1 operation(s) for email.
+  humanURL: https://info.orcid.org/documentation/features/public-api/
+  baseURL: https://pub.orcid.org/v3.0
+  tags:
+  - Email
+  properties:
+  - type: OpenAPI
+    url: openapi/orcid-email-api-openapi.yml
+  - type: Documentation
+    url: https://info.orcid.org/documentation/features/public-api/
+  - type: Authentication
+    url: https://info.orcid.org/documentation/features/public-api/#easy-faq-2472
+  - type: GettingStarted
+    url: https://info.orcid.org/documentation/api-tutorials/api-tutorial-read-data-on-a-record/
+- aid: orcid:orcid-employments-api
+  name: ORCID Employments API
+  description: The Employments API from ORCID — 1 operation(s) for employments.
+  humanURL: https://info.orcid.org/documentation/features/public-api/
+  baseURL: https://pub.orcid.org/v3.0
+  tags:
+  - Employments
+  properties:
+  - type: OpenAPI
+    url: openapi/orcid-employments-api-openapi.yml
+  - type: Documentation
+    url: https://info.orcid.org/documentation/features/public-api/
+  - type: Authentication
+    url: https://info.orcid.org/documentation/features/public-api/#easy-faq-2472
+  - type: GettingStarted
+    url: https://info.orcid.org/documentation/api-tutorials/api-tutorial-read-data-on-a-record/
+- aid: orcid:orcid-external-identifiers-api
+  name: ORCID External Identifiers API
+  description: The External Identifiers API from ORCID — 1 operation(s) for external identifiers.
+  humanURL: https://info.orcid.org/documentation/features/public-api/
+  baseURL: https://pub.orcid.org/v3.0
+  tags:
+  - External Identifiers
+  properties:
+  - type: OpenAPI
+    url: openapi/orcid-external-identifiers-api-openapi.yml
+  - type: Documentation
+    url: https://info.orcid.org/documentation/features/public-api/
+  - type: Authentication
+    url: https://info.orcid.org/documentation/features/public-api/#easy-faq-2472
+  - type: GettingStarted
+    url: https://info.orcid.org/documentation/api-tutorials/api-tutorial-read-data-on-a-record/
+- aid: orcid:orcid-fundings-api
+  name: ORCID Fundings API
+  description: The Fundings API from ORCID — 1 operation(s) for fundings.
+  humanURL: https://info.orcid.org/documentation/features/public-api/
+  baseURL: https://pub.orcid.org/v3.0
+  tags:
+  - Fundings
+  properties:
+  - type: OpenAPI
+    url: openapi/orcid-fundings-api-openapi.yml
+  - type: Documentation
+    url: https://info.orcid.org/documentation/features/public-api/
+  - type: Authentication
+    url: https://info.orcid.org/documentation/features/public-api/#easy-faq-2472
+  - type: GettingStarted
+    url: https://info.orcid.org/documentation/api-tutorials/api-tutorial-read-data-on-a-record/
+- aid: orcid:orcid-keywords-api
+  name: ORCID Keywords API
+  description: The Keywords API from ORCID — 1 operation(s) for keywords.
+  humanURL: https://info.orcid.org/documentation/features/public-api/
+  baseURL: https://pub.orcid.org/v3.0
+  tags:
+  - Keywords
+  properties:
+  - type: OpenAPI
+    url: openapi/orcid-keywords-api-openapi.yml
+  - type: Documentation
+    url: https://info.orcid.org/documentation/features/public-api/
+  - type: Authentication
+    url: https://info.orcid.org/documentation/features/public-api/#easy-faq-2472
+  - type: GettingStarted
+    url: https://info.orcid.org/documentation/api-tutorials/api-tutorial-read-data-on-a-record/
+- aid: orcid:orcid-other-names-api
+  name: ORCID Other Names API
+  description: The Other Names API from ORCID — 1 operation(s) for other names.
+  humanURL: https://info.orcid.org/documentation/features/public-api/
+  baseURL: https://pub.orcid.org/v3.0
+  tags:
+  - Other Names
+  properties:
+  - type: OpenAPI
+    url: openapi/orcid-other-names-api-openapi.yml
+  - type: Documentation
+    url: https://info.orcid.org/documentation/features/public-api/
+  - type: Authentication
+    url: https://info.orcid.org/documentation/features/public-api/#easy-faq-2472
+  - type: GettingStarted
+    url: https://info.orcid.org/documentation/api-tutorials/api-tutorial-read-data-on-a-record/
+- aid: orcid:orcid-peer-reviews-api
+  name: ORCID Peer Reviews API
+  description: The Peer Reviews API from ORCID — 1 operation(s) for peer reviews.
+  humanURL: https://info.orcid.org/documentation/features/public-api/
+  baseURL: https://pub.orcid.org/v3.0
+  tags:
+  - Peer Reviews
+  properties:
+  - type: OpenAPI
+    url: openapi/orcid-peer-reviews-api-openapi.yml
+  - type: Documentation
+    url: https://info.orcid.org/documentation/features/public-api/
+  - type: Authentication
+    url: https://info.orcid.org/documentation/features/public-api/#easy-faq-2472
+  - type: GettingStarted
+    url: https://info.orcid.org/documentation/api-tutorials/api-tutorial-read-data-on-a-record/
+- aid: orcid:orcid-person-api
+  name: ORCID Person API
+  description: The Person API from ORCID — 1 operation(s) for person.
+  humanURL: https://info.orcid.org/documentation/features/public-api/
+  baseURL: https://pub.orcid.org/v3.0
+  tags:
+  - Person
+  properties:
+  - type: OpenAPI
+    url: openapi/orcid-person-api-openapi.yml
+  - type: Documentation
+    url: https://info.orcid.org/documentation/features/public-api/
+  - type: Authentication
+    url: https://info.orcid.org/documentation/features/public-api/#easy-faq-2472
+  - type: GettingStarted
+    url: https://info.orcid.org/documentation/api-tutorials/api-tutorial-read-data-on-a-record/
+- aid: orcid:orcid-personal-details-api
+  name: ORCID Personal Details API
+  description: The Personal Details API from ORCID — 1 operation(s) for personal details.
+  humanURL: https://info.orcid.org/documentation/features/public-api/
+  baseURL: https://pub.orcid.org/v3.0
+  tags:
+  - Personal Details
+  properties:
+  - type: OpenAPI
+    url: openapi/orcid-personal-details-api-openapi.yml
+  - type: Documentation
+    url: https://info.orcid.org/documentation/features/public-api/
+  - type: Authentication
+    url: https://info.orcid.org/documentation/features/public-api/#easy-faq-2472
+  - type: GettingStarted
+    url: https://info.orcid.org/documentation/api-tutorials/api-tutorial-read-data-on-a-record/
+- aid: orcid:orcid-record-api
+  name: ORCID Record API
+  description: The Record API from ORCID — 1 operation(s) for record.
+  humanURL: https://info.orcid.org/documentation/features/public-api/
+  baseURL: https://pub.orcid.org/v3.0
+  tags:
+  - Record
+  properties:
+  - type: OpenAPI
+    url: openapi/orcid-record-api-openapi.yml
+  - type: Documentation
+    url: https://info.orcid.org/documentation/features/public-api/
+  - type: Authentication
+    url: https://info.orcid.org/documentation/features/public-api/#easy-faq-2472
+  - type: GettingStarted
+    url: https://info.orcid.org/documentation/api-tutorials/api-tutorial-read-data-on-a-record/
+- aid: orcid:orcid-researcher-urls-api
+  name: ORCID Researcher Urls API
+  description: The Researcher Urls API from ORCID — 1 operation(s) for researcher urls.
+  humanURL: https://info.orcid.org/documentation/features/public-api/
+  baseURL: https://pub.orcid.org/v3.0
+  tags:
+  - Researcher Urls
+  properties:
+  - type: OpenAPI
+    url: openapi/orcid-researcher-urls-api-openapi.yml
+  - type: Documentation
+    url: https://info.orcid.org/documentation/features/public-api/
+  - type: Authentication
+    url: https://info.orcid.org/documentation/features/public-api/#easy-faq-2472
+  - type: GettingStarted
+    url: https://info.orcid.org/documentation/api-tutorials/api-tutorial-read-data-on-a-record/
+- aid: orcid:orcid-summary-api
+  name: ORCID Summary API
+  description: The Summary API from ORCID — 1 operation(s) for summary.
+  humanURL: https://info.orcid.org/documentation/features/public-api/
+  baseURL: https://pub.orcid.org/v3.0
+  tags:
+  - Summary
+  properties:
+  - type: OpenAPI
+    url: openapi/orcid-summary-api-openapi.yml
+  - type: Documentation
+    url: https://info.orcid.org/documentation/features/public-api/
+  - type: Authentication
+    url: https://info.orcid.org/documentation/features/public-api/#easy-faq-2472
+  - type: GettingStarted
+    url: https://info.orcid.org/documentation/api-tutorials/api-tutorial-read-data-on-a-record/
+- aid: orcid:orcid-works-api
+  name: ORCID Works API
+  description: The Works API from ORCID — 2 operation(s) for works.
+  humanURL: https://info.orcid.org/documentation/features/public-api/
+  baseURL: https://pub.orcid.org/v3.0
+  tags:
+  - Works
+  properties:
+  - type: OpenAPI
+    url: openapi/orcid-works-api-openapi.yml
+  - type: Documentation
+    url: https://info.orcid.org/documentation/features/public-api/
+  - type: Authentication
+    url: https://info.orcid.org/documentation/features/public-api/#easy-faq-2472
+  - type: GettingStarted
+    url: https://info.orcid.org/documentation/api-tutorials/api-tutorial-read-data-on-a-record/
 common:
   - type: AgenticAccess
     url: agentic-access/orcid-agentic-access.yml
