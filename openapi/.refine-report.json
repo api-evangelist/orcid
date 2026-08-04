@@ -1,0 +1,42 @@
+{
+  "provider": "orcid",
+  "sources": [
+    "orcid-address-api-openapi.yml",
+    "orcid-educations-api-openapi.yml",
+    "orcid-email-api-openapi.yml",
+    "orcid-employments-api-openapi.yml",
+    "orcid-external-identifiers-api-openapi.yml",
+    "orcid-fundings-api-openapi.yml",
+    "orcid-keywords-api-openapi.yml",
+    "orcid-other-names-api-openapi.yml",
+    "orcid-peer-reviews-api-openapi.yml",
+    "orcid-person-api-openapi.yml",
+    "orcid-personal-details-api-openapi.yml",
+    "orcid-record-api-openapi.yml",
+    "orcid-researcher-urls-api-openapi.yml",
+    "orcid-summary-api-openapi.yml",
+    "orcid-works-api-openapi.yml"
+  ],
+  "outputs": [
+    "orcid-address-api-openapi.yml",
+    "orcid-educations-api-openapi.yml",
+    "orcid-email-api-openapi.yml",
+    "orcid-employments-api-openapi.yml",
+    "orcid-external-identifiers-api-openapi.yml",
+    "orcid-fundings-api-openapi.yml",
+    "orcid-keywords-api-openapi.yml",
+    "orcid-other-names-api-openapi.yml",
+    "orcid-peer-reviews-api-openapi.yml",
+    "orcid-person-api-openapi.yml",
+    "orcid-personal-details-api-openapi.yml",
+    "orcid-record-api-openapi.yml",
+    "orcid-researcher-urls-api-openapi.yml",
+    "orcid-summary-api-openapi.yml",
+    "orcid-works-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
