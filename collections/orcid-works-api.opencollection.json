@@ -1,0 +1,62 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "ORCID Public Address Works API",
+    "version": "3.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Works",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get research works",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://pub.orcid.org/v3.0/:orcid_id/works",
+            "params": [
+              {
+                "name": "orcid_id",
+                "value": "",
+                "type": "path",
+                "description": "ORCID iD (e.g. 0000-0001-2345-6789)"
+              }
+            ]
+          },
+          "docs": "Get research works"
+        },
+        {
+          "info": {
+            "name": "Get specific works in bulk by put-codes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://pub.orcid.org/v3.0/:orcid_id/works/:put_codes",
+            "params": [
+              {
+                "name": "orcid_id",
+                "value": "",
+                "type": "path",
+                "description": "ORCID iD (e.g. 0000-0001-2345-6789)"
+              },
+              {
+                "name": "put_codes",
+                "value": "",
+                "type": "path",
+                "description": "Comma-separated list of put-codes (up to 100)"
+              }
+            ]
+          },
+          "docs": "Get specific works in bulk by put-codes"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,117 @@
+{
+  "item": [
+    {
+      "id": "76956c56-9aaa-45c4-b544-03221c4bce82",
+      "name": "Fundings",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "284476ad-239c-4645-adea-2f1571ccb643",
+          "name": "Get funding activities",
+          "request": {
+            "name": "Get funding activities",
+            "description": {},
+            "url": {
+              "path": [
+                ":orcid_id",
+                "fundings"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "orcid_id",
+                  "description": "(Required) ORCID iD (e.g. 0000-0001-2345-6789)"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "c649f538-245d-4ea2-9ace-c65b52e73b25",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ":orcid_id",
+                    "fundings"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "orcid_id",
+                      "description": "(Required) ORCID iD (e.g. 0000-0001-2345-6789)"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"key_0\": 9705,\n  \"key_1\": false\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://pub.orcid.org/v3.0",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "10c9d3df-65c8-4f8d-a9d5-c5228fe26ba3",
+    "name": "ORCID Public Address Fundings API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The ORCID Public API allows reading publicly available data from ORCID records. Based on version 3.0 of the ORCID message schema.",
+      "type": "text/plain"
+    }
+  }
+}

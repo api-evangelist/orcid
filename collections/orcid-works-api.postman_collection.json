@@ -1,0 +1,218 @@
+{
+  "item": [
+    {
+      "id": "28a5fcd3-7c4d-4ade-ac43-0b76d7f6463c",
+      "name": "Works",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "2e349a7e-566e-4baa-a249-cba814004d14",
+          "name": "Get research works",
+          "request": {
+            "name": "Get research works",
+            "description": {},
+            "url": {
+              "path": [
+                ":orcid_id",
+                "works"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "orcid_id",
+                  "description": "(Required) ORCID iD (e.g. 0000-0001-2345-6789)"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "657df548-c2d8-405d-b41d-2732f606be65",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ":orcid_id",
+                    "works"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "orcid_id",
+                      "description": "(Required) ORCID iD (e.g. 0000-0001-2345-6789)"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"key_0\": 9932.445664509256,\n  \"key_1\": 9671\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "32f2f416-d018-4ee7-9bfd-12affadcdef7",
+          "name": "Get specific works in bulk by put-codes",
+          "request": {
+            "name": "Get specific works in bulk by put-codes",
+            "description": {},
+            "url": {
+              "path": [
+                ":orcid_id",
+                "works",
+                ":put_codes"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "orcid_id",
+                  "description": "(Required) ORCID iD (e.g. 0000-0001-2345-6789)"
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "put_codes",
+                  "description": "(Required) Comma-separated list of put-codes (up to 100)"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "39258649-20e7-4bda-9dd3-0b1ee616b844",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ":orcid_id",
+                    "works",
+                    ":put_codes"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "orcid_id",
+                      "description": "(Required) ORCID iD (e.g. 0000-0001-2345-6789)"
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "put_codes",
+                      "description": "(Required) Comma-separated list of put-codes (up to 100)"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"key_0\": 9932.445664509256,\n  \"key_1\": 9671\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://pub.orcid.org/v3.0",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "400128e1-71d2-4f16-9387-a864c23dc8d1",
+    "name": "ORCID Public Address Works API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The ORCID Public API allows reading publicly available data from ORCID records. Based on version 3.0 of the ORCID message schema.",
+      "type": "text/plain"
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "item": [
+    {
+      "id": "0831d8fc-2e05-49b5-9168-fe7b86e50d3a",
+      "name": "Employments",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "b156a406-fcbf-4a16-8169-d4fab8e52692",
+          "name": "Get employment affiliations",
+          "request": {
+            "name": "Get employment affiliations",
+            "description": {},
+            "url": {
+              "path": [
+                ":orcid_id",
+                "employments"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "orcid_id",
+                  "description": "(Required) ORCID iD (e.g. 0000-0001-2345-6789)"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "2af31b83-f2a5-42f2-a4aa-1cf63a9e1c1e",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ":orcid_id",
+                    "employments"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "orcid_id",
+                      "description": "(Required) ORCID iD (e.g. 0000-0001-2345-6789)"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"key_0\": 8209.096873870503,\n  \"key_1\": \"string\",\n  \"key_2\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://pub.orcid.org/v3.0",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "5cfdf6e6-7934-43a8-be73-a97637470ee5",
+    "name": "ORCID Public Address Employments API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The ORCID Public API allows reading publicly available data from ORCID records. Based on version 3.0 of the ORCID message schema.",
+      "type": "text/plain"
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "item": [
+    {
+      "id": "791aef50-cdba-4442-ad3d-de59d36f1dd9",
+      "name": "Summary",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "b6830db6-9e58-4f65-9572-6f976e077502",
+          "name": "Get a summary of validated and self-asserted record items",
+          "request": {
+            "name": "Get a summary of validated and self-asserted record items",
+            "description": {},
+            "url": {
+              "path": [
+                ":orcid_id",
+                "summary"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "orcid_id",
+                  "description": "(Required) ORCID iD (e.g. 0000-0001-2345-6789)"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "e58e9f7d-2db7-434f-9674-654000a63f5d",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ":orcid_id",
+                    "summary"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "orcid_id",
+                      "description": "(Required) ORCID iD (e.g. 0000-0001-2345-6789)"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"key_0\": 1892\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://pub.orcid.org/v3.0",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "3f7bec20-2853-4dec-8cd2-42e7cc4c039b",
+    "name": "ORCID Public Address Summary API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The ORCID Public API allows reading publicly available data from ORCID records. Based on version 3.0 of the ORCID message schema.",
+      "type": "text/plain"
+    }
+  }
+}

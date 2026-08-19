@@ -1,0 +1,37 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "ORCID Public Address Researcher Urls API",
+    "version": "3.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Researcher Urls",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get researcher profile links",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://pub.orcid.org/v3.0/:orcid_id/researcher-urls",
+            "params": [
+              {
+                "name": "orcid_id",
+                "value": "",
+                "type": "path",
+                "description": "ORCID iD (e.g. 0000-0001-2345-6789)"
+              }
+            ]
+          },
+          "docs": "Get researcher profile links"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
