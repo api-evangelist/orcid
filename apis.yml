@@ -196,6 +196,8 @@ apis:
   humanURL: https://info.orcid.org/documentation/features/public-api/
   baseURL: https://pub.orcid.org/v3.0
   tags:
+  - Persons
+  tags_raw:
   - Person
   properties:
   - type: OpenAPI
