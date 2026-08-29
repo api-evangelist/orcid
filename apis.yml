@@ -5,6 +5,18 @@ description: >-
   every other researcher. ORCID provides a public API for reading data from ORCID records and a member API for creating
   and updating records.
 type: Index
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: true
+  label: Hosted service · you call their endpoint
+  confidence: high
+  source:
+  - openapi
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
