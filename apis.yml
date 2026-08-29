@@ -301,6 +301,9 @@ apis:
   - type: GettingStarted
     url: https://info.orcid.org/documentation/api-tutorials/api-tutorial-read-data-on-a-record/
 common:
+  - type: CapabilityMap
+    url: capabilities/orcid-capability-edges.yml
+    name: ORCID Business Capability Map
   - type: AgenticAccess
     url: agentic-access/orcid-agentic-access.yml
   - type: DomainSecurity
