@@ -21,14 +21,6 @@ paths:
       tags:
       - Email
 components:
-  parameters:
-    OrcidId:
-      name: orcid_id
-      in: path
-      required: true
-      description: ORCID iD (e.g. 0000-0001-2345-6789)
-      schema:
-        type: string
   responses:
     Generic:
       description: Successful response
@@ -41,5 +33,13 @@ components:
           schema:
             type: object
             additionalProperties: true
+  parameters:
+    OrcidId:
+      name: orcid_id
+      in: path
+      required: true
+      description: ORCID iD (e.g. 0000-0001-2345-6789)
+      schema:
+        type: string
 x-generated-from: https://info.orcid.org/api/tutorial/read-orcid-records
 x-generated-by: claude-crawl-2026-05-08
