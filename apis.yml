@@ -303,6 +303,12 @@ apis:
   - type: GettingStarted
     url: https://info.orcid.org/documentation/api-tutorials/api-tutorial-read-data-on-a-record/
 common:
+  - type: Plans
+    url: plans/orcid-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/orcid-rate-limits.yml
+  - type: FinOps
+    url: finops/orcid-finops.yml
   - type: CapabilityMap
     url: capabilities/orcid-capability-edges.yml
     name: ORCID Business Capability Map
