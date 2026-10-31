@@ -1,4 +1,4 @@
-# ORCID (orcid)
+# ORCID
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,85 +66,146 @@
 
 ORCID provides a persistent digital identifier (an ORCID iD) that you own and control, and that distinguishes you from every other researcher. ORCID provides a public API for reading data from ORCID records and a member API for creating and updating records.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/orcid/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/orcid/refs/heads/main/apis.yml)
+**Areas:** Academic · Identity · Researchers · ORCID · Research Data
 
-## Scope
+## ORCID on APIs.io
 
-- **Type:** Index
-- **Position:** Consumer
-- **Access:** 3rd-Party
+Everything profiled for ORCID is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/orcid/](https://apis.io/providers/orcid/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (16)
 
-- Academic
-- Identity
-- Researchers
+- [ORCID Member API](https://apis.io/apis/orcid/orcid-member-api/) — The ORCID Member API allows member organizations to read, write, and update data on ORCID records with user permission.
+- [ORCID Address API](https://apis.io/apis/orcid/orcid-address-api/) — The Address API from ORCID — 1 operation(s) for address.
+- [ORCID Educations API](https://apis.io/apis/orcid/orcid-educations-api/) — The Educations API from ORCID — 1 operation(s) for educations.
+- [ORCID Email API](https://apis.io/apis/orcid/orcid-email-api/) — The Email API from ORCID — 1 operation(s) for email.
+- [ORCID Employments API](https://apis.io/apis/orcid/orcid-employments-api/) — The Employments API from ORCID — 1 operation(s) for employments.
+- [ORCID External Identifiers API](https://apis.io/apis/orcid/orcid-external-identifiers-api/) — The External Identifiers API from ORCID — 1 operation(s) for external identifiers.
+- [ORCID Fundings API](https://apis.io/apis/orcid/orcid-fundings-api/) — The Fundings API from ORCID — 1 operation(s) for fundings.
+- [ORCID Keywords API](https://apis.io/apis/orcid/orcid-keywords-api/) — The Keywords API from ORCID — 1 operation(s) for keywords.
+- [ORCID Other Names API](https://apis.io/apis/orcid/orcid-other-names-api/) — The Other Names API from ORCID — 1 operation(s) for other names.
+- [ORCID Peer Reviews API](https://apis.io/apis/orcid/orcid-peer-reviews-api/) — The Peer Reviews API from ORCID — 1 operation(s) for peer reviews.
+- [ORCID Person API](https://apis.io/apis/orcid/orcid-person-api/) — The Person API from ORCID — 1 operation(s) for person.
+- [ORCID Personal Details API](https://apis.io/apis/orcid/orcid-personal-details-api/) — The Personal Details API from ORCID — 1 operation(s) for personal details.
+- [ORCID Record API](https://apis.io/apis/orcid/orcid-record-api/) — The Record API from ORCID — 1 operation(s) for record.
+- [ORCID Researcher Urls API](https://apis.io/apis/orcid/orcid-researcher-urls-api/) — The Researcher Urls API from ORCID — 1 operation(s) for researcher urls.
+- [ORCID Summary API](https://apis.io/apis/orcid/orcid-summary-api/) — The Summary API from ORCID — 1 operation(s) for summary.
+- [ORCID Works API](https://apis.io/apis/orcid/orcid-works-api/) — The Works API from ORCID — 2 operation(s) for works.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2025-02-06
-- **Modified:** 2026-05-19
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### ORCID Public API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-The ORCID Public API allows reading publicly available data from ORCID records. Based on version 3.0 of the ORCID message schema.
+- [Orcid Agentic Access](https://apis.io/agentic-access/orcid/orcid-agentic-access/)
 
-- **Human URL:** [https://info.orcid.org/documentation/features/public-api/](https://info.orcid.org/documentation/features/public-api/)
-- **Base URL:** `https://pub.orcid.org/v3.0`
+#### Collections (15)
 
-#### Tags
+Postman and Open Collection request collections.
 
-- Identity
-- Public
-- Researchers
+- [ORCID Public API](https://apis.io/collections/orcid/open-orcid/)
+- [ORCID Public Address API](https://apis.io/collections/orcid/open-orcid-address-api/)
+- [ORCID Public Address Educations API](https://apis.io/collections/orcid/open-orcid-educations-api/)
+- [ORCID Public Address Email API](https://apis.io/collections/orcid/open-orcid-email-api/)
+- [ORCID Public Address Employments API](https://apis.io/collections/orcid/open-orcid-employments-api/)
+- [ORCID Public Address External Identifiers API](https://apis.io/collections/orcid/open-orcid-external-identifiers-api/)
+- [ORCID Public Address Fundings API](https://apis.io/collections/orcid/open-orcid-fundings-api/)
+- [ORCID Public Address Keywords API](https://apis.io/collections/orcid/open-orcid-keywords-api/)
+- [ORCID Public Address Other Names API](https://apis.io/collections/orcid/open-orcid-other-names-api/)
+- [ORCID Public Address Person API](https://apis.io/collections/orcid/open-orcid-person-api/)
+- [ORCID Public Address Personal Details API](https://apis.io/collections/orcid/open-orcid-personal-details-api/)
+- [ORCID Public Address Record API](https://apis.io/collections/orcid/open-orcid-record-api/)
+- [ORCID Public Address Researcher Urls API](https://apis.io/collections/orcid/open-orcid-researcher-urls-api/)
+- [ORCID Public Address Summary API](https://apis.io/collections/orcid/open-orcid-summary-api/)
+- [ORCID Public Address Works API](https://apis.io/collections/orcid/open-orcid-works-api/)
 
-#### Properties
+#### Security (1)
 
-- [Documentation](https://info.orcid.org/documentation/features/public-api/)
-- [Authentication](https://info.orcid.org/documentation/features/public-api/#easy-faq-2472)
-- [Getting Started](https://info.orcid.org/documentation/api-tutorials/api-tutorial-read-data-on-a-record/)
-- [OpenAPI](openapi/orcid-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/orcid.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/orcid.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Authentication, trust centre, and vulnerability disclosure.
 
-### ORCID Member API
+- [Orcid Domain Security](https://apis.io/security/orcid/orcid-domain-security/)
 
-The ORCID Member API allows member organizations to read, write, and update data on ORCID records with user permission.
+#### Plans and pricing (1)
 
-- **Human URL:** [https://info.orcid.org/documentation/features/member-api/](https://info.orcid.org/documentation/features/member-api/)
-- **Base URL:** `https://api.orcid.org/v3.0`
+Published plans, tiers and prices.
 
-#### Tags
+- [Orcid Plans Pricing](https://apis.io/plans/orcid/orcid-plans-pricing/)
 
-- Identity
-- Member
-- Researchers
+#### Rate limits (1)
 
-#### Properties
+Published request limits.
 
-- [Documentation](https://info.orcid.org/documentation/features/member-api/)
-- [Authentication](https://info.orcid.org/documentation/api-tutorials/api-tutorial-get-and-authenticated-orcid-id/)
-- [Postman Collection](collections/orcid.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/orcid.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Orcid Rate Limits](https://apis.io/rate-limits/orcid/orcid-rate-limits/)
 
-## Common Properties
+#### FinOps (1)
 
-- [LinkedIn](https://www.linkedin.com/company/orcid)
-- [Portal](https://orcid.org/)
-- [Documentation](https://info.orcid.org/documentation/)
-- [Getting Started](https://info.orcid.org/documentation/api-tutorials/)
-- [Authentication](https://info.orcid.org/documentation/api-tutorials/api-tutorial-get-and-authenticated-orcid-id/)
-- [Sign Up](https://orcid.org/register)
-- [Login](https://orcid.org/signin)
-- [Terms of Service](https://info.orcid.org/terms-and-conditions-of-use/)
-- [Privacy Policy](https://info.orcid.org/privacy-policy/)
-- [Support](https://support.orcid.org/)
-- [GitHub Organization](https://github.com/ORCID)
+What the API costs to run, by operation.
+
+- [Orcid Finops](https://apis.io/finops/orcid/orcid-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
 - [Website](https://orcid.org/)
+- [Documentation](https://info.orcid.org/documentation/)
+- [Getting started](https://info.orcid.org/documentation/api-tutorials/)
+- [Support](https://support.orcid.org/)
+- [Terms of service](https://info.orcid.org/terms-and-conditions-of-use/)
+- [Privacy policy](https://info.orcid.org/privacy-policy/)
+- [GitHub](https://github.com/ORCID)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 32.3** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 71.4 |
+| Contract quality | 38.6 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 47.6 |
+| Access clarity | 25.0 |
+
+**Agent readiness 20.7** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | na |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | na |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | na |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 15.7** — Education & Research
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/orcid/](https://apis.io/providers/orcid/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for ORCID: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/orcid/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
